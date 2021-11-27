@@ -1,0 +1,20 @@
+.free{
+  margin-top: 142.5px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 70px;
+   background: url("../images/free/bg.png") center/cover no-repeat;
+    border-radius: 20px;
+  }
+  &__text{
+    @include fonts($montserrat,normal,800,36px,130%);
+    color: #FFFFFF;
+
+  }
+  &__button{
+    width: 234px;
+    height: 52px;
+  }
+}

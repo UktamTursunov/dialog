@@ -1,0 +1,43 @@
+
+@import "../libs/fontello/css/fontello.css";
+@import "../fonts/roboto/stylesheet.css";
+@import "../fonts/montserrat/stylesheet.css";
+@import "../fonts/lato/stylesheet.css";
+@import "mixin";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+.container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+//отдельные блоки
+@import "button";
+@import "description";
+@import "title";
+
+//секции
+@import "header";
+@import "lesson";
+@import "welcome";
+@import "programs";
+@import "review";
+@import "license";
+@import "partners";
+@import "free";
+@import "team";
+
+//сложные элементы
+@import "overlay";
+
+
+

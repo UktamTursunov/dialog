@@ -1,0 +1,33 @@
+.license{
+    &__block{
+    display: flex;
+    justify-content: space-between;
+    height: 441px;
+    position: relative;
+    background: #3035C4;
+    box-shadow: 0 10px 40px rgba(73, 95, 211, 0.22);
+    border-radius: 20px;
+  }
+  &__img{
+    margin-left: 70px;
+    position: absolute;
+    top: -46px;
+  }
+  &__content{
+    margin:100px 70px 100px 0;
+  }
+  &__title{
+    @include fonts($montserrat,normal,800,32px,130%);
+    color: #FFFFFF;
+    margin-bottom: 25px;
+  }
+  &__description{
+    @include fonts($Lato,normal,normal,16px,150%);
+    color: #FFFFFF;
+    margin-bottom: 32px;
+  }
+  &__button{
+    width: 375px;
+    height: 52px;
+  }
+}

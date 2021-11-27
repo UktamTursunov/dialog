@@ -1,0 +1,118 @@
+.review{
+  padding: 80px 0;
+  background: #F8F8FF;
+  &__title{
+    margin-bottom: 52px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+  }
+  &__item{
+    @include fonts($montserrat,normal,bold,18px,150%);
+    text-align: center;
+    color: #3035C450;
+    position: relative;
+    cursor: pointer;
+    &::before{
+    content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      background: #E6514A;
+      bottom: -20px;
+      left: 0;
+      transition: 3s;
+    }
+    span{
+      opacity: 0;
+      transition: 2s;
+      font-size: 0;
+    }
+    &_active{
+      color: #E6514A;
+      transition: 2s;
+      &::before{
+        width: 100%;
+        transition: 3s;
+      }
+      span{
+        opacity: 100%;
+        transition: 2s;
+        font-size: 18px;
+      }
+    }
+  }
+  &__tabs-content {
+    display: none;
+
+    &_active{
+      display: block;
+    }
+  }
+  &__block{
+    background: #FFFFFF;
+    box-shadow: 0 10px 40px rgba(0, 11, 68, 0.22);
+    border-radius: 10px;
+    padding: 48px 52px;
+    max-width: 970px;
+    margin: 0 100px;
+    &-title{
+      @include fonts($montserrat,normal,800,24px,130%);
+      color: #3035C4;
+      margin-bottom: 24px;
+    }
+    &-description{
+      @include fonts($Lato,normal,normal,14px,150%);
+      color: #23283B;
+      margin-bottom: 48px;
+    }
+    &-row{
+      display: flex;
+      column-gap: 60px;
+    }
+    &-statistics{
+      height: 308px;
+    }
+    &-subtitle{
+      @include fonts($montserrat,normal,800,20px,130%);
+      color: #23283B;
+      margin-bottom: 24px;
+    }
+    &-item{
+      display: flex;
+      position: relative;
+     &_first{
+       border-bottom: 4px solid #DEDEFF;
+       margin-bottom: 16px;
+       &::after{
+         content: '';
+         position: absolute;
+         width: 60px;
+         height: 4px;
+         background: #E6514A;
+         border-radius: 10px;
+         z-index: 2;
+         left: 0;
+         bottom: -4px;
+       }
+     }
+    }
+
+
+    &-text{
+      @include fonts($Lato,normal,normal,14px,150%);
+      color: #23283B;
+      margin-left: 16px;
+    }
+    &-big{
+      @include fonts($Lato,normal,800,14px,150%);
+      color: #23283B;
+    }
+    .red{
+      color:#E6514A;
+    }
+  }
+
+}

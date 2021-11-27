@@ -1,0 +1,42 @@
+.welcome {
+  padding: 54px 0 100px;
+  background: url("../images/welcome/bg.png") bottom left/contain no-repeat;
+  &__title{
+    margin: 22px 0 42px;
+  }
+  &__video{
+    position: relative;
+    margin: 0 auto;
+    max-width: 770px;
+    border-radius: 12px;
+    width: 100%;
+    padding: 180px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/welcome/videobg.png") center/cover no-repeat;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: #3035C360;
+      border-radius: 12px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    &-play{
+      position: relative;
+      z-index: 2;
+      font-size: 80px;
+      color: #FFFFFF;
+      cursor: pointer;
+      &:hover{
+        color: #E6514A;
+      }
+    }
+  }
+
+}
